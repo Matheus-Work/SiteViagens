@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Turismos</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    .centralizado {
+        padding: auto;
+    }
+    .cima {
+       background-color: rgb(7, 7, 78);
+       color: white;
+       width: 100%;
+       height: 50px;
+       line-height: 50px;
+       padding: 10px 10px 10px 5%;
+     
+    }
+    .quemsomos {
+        color: white;
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+        text-align: right;
+        list-style-type:none;
+        margin: 3px;
+        position: relative;
+        margin-top: 0;
+        top: -32px;
+        right: 5%;
+    }
+    .flex {
+        padding-left: 5%;
+    }
+    .flex1 {
+        position: relative;
+        top:-10px;
+        color:rgb(7, 7, 78);
+        font-size: 34px;
+    }
+    .Titulop {
+        font-size: larger;
+        left:5%;
+        position: relative;
+        top:100px;
+    }
+    .bolinha {
+        background-color: rgb(7, 7, 78);
+        border-radius: 30px;
+        padding: 10px 10px 10px 10px;
+        color:white;
+        position: relative;
+      top: -0px;
+      margin-bottom: 100px;
+    }
+    .bolinhaplano {
+        background-color: rgb(7, 7, 78);
+        border-radius: 30px;
+        padding: 10px;
+        color:white;
+        position: relative;
+        bottom: 10px;
+        right:-30px;
+        top:-2px;
+       
+
+    }
+    .bolinhaplano2 {
+        background-color: rgb(7, 7, 78);
+        border-radius: 30px;
+        padding: 10px;
+        color:white;
+        position: relative;
+        right:-40px;
+        top:-2px;
+
+    }
+    .bolinhaplano3 {
+        background-color: rgb(7, 7, 78);
+        border-radius: 30px;
+        padding: 10px;
+        color:white;
+        position: relative;
+        right:-43px;
+        top:-2px;
+
+    }
+    .bolinha2 {
+        background-color: white;
+        border-radius: 30px;
+        padding: 10px;
+        color: rgb(7, 7, 78);
+        position: relative;
+      top: -0px;
+
+    }
+    .bolinha3 {
+        background-color: white;
+        border-radius: 30px;
+        padding: 10px;
+        color: rgb(7, 7, 78);
+        position: relative;
+     
+      right:-20%
+
+    }
+
+    .item {
+        position: relative;
+      top: -15px;
+    }
+    .imagem1 {
+       width: 370px;
+       height: 200px;
+       position:absolute;
+       right:5%;
+       top: 130px;
+    }
+    .imagem2 {
+        width: 310px;
+        height: 242px;
+        position:relative;
+        top: 105px;
+    }
+    .texto2 {
+        text-align: justify;
+        width: 310px;
+        height: 190px;
+        position: absolute;
+        right: 5%;
+        top: 370px;
+    }
+    .fundoazul {
+        background-color: rgb(7, 7, 78);
+        width: 100%;
+        height: 310px;
+        position: relative;
+        top: 50px;
+        margin-top: 100px;
+    }
+    .imagens {
+        display: flex;
+        height: 150px;
+        justify-content: space-around;
+        position: relative;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .abaixoimagem{
+        justify-content: space-around;
+        position: relative;
+        left:17px;
+    }
+    .abaixoimagem2 {
+        color:white;
+        justify-content: space-around;
+        position: relative;
+        left:19px;
+    }
+    .abaixoimagem3 {
+        color:white;
+        justify-content: space-around;
+        position: relative;
+        left:35px;
+    }
+    .abaixoimagem4 {
+        color:white;
+        justify-content: space-around;
+        position: relative;
+        right: 5%;
+    }
+    .serviços {
+        color:white;
+        text-align: center;
+    }
+    .planos {
+       
+        width: 100%;
+        height: 370px;
+        display:flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .tituloplano {
+       text-align: center;
+      
+
+    }
+    .plano1 {
+        border: 4px solid rgb(7, 7, 78);
+        padding: 5px;
+        position: relative;
+        left: 5%;
+        margin-right: 10px;
+        padding-bottom: 15px;
+        
+        
+    }
+    .textosplanos{
+        text-align: left;
+    }
+    .plano2 {
+        border: 4px solid rgb(7, 7, 78);
+        padding: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 15px;
+    }
+   .plano3 { 
+    border: 4px solid rgb(7, 7, 78);
+        padding: 5px;
+        position: relative;
+        right: 5%;
+        margin-left: 10px;
+        padding-bottom: 15px;
+    }
+    .rodape1 {
+        position: absolute;
+        bottom: -980px;
+        color: white;
+        right: 5%;
+    }
+    .rodapeazul {
+        margin-top:50px;
+
+    }
+    .rodape  {
+        color: white;
+        background-color: rgb(7, 7, 78);
+        width: 100%;
+        height: 150px;
+        display:flex;
+        margin-top:50px;
+    }
+    .meunome{
+        margin-left:5% ;
+        margin-top:40px;
+    }
+    .branco {
+        color: white;
+        padding: 5px;
+       margin:5px;
+       margin-bottom: 200px;
+
+    }
+    .titulorodape {
+        position: absolute;
+        left:35%;
+        text-align: center;
+        text-decoration: underline;
+        
+    }
+    .informacoes {
+        margin-top: 25px;
+        list-style-type:square;
+        margin-left: 2.6%;
+        position:absolute;
+        top:237%;
+        color: white;
+      list-style-type:square;
+    }
+    .alinhamento2 {
+        justify-content: space-between;
+    }
+    .quemsomostexto {
+        font-size: 34px;
+        color: rgb(7, 7, 78);
+        display: flex;
+    }
+    .quemsomostexto::before {
+        content: "";
+        height:50px;
+        width: 5px;
+        margin-right: 5px;
+        background-color: rgb(7, 7, 78);
+        position: relative;
+    }
+    .tituloplano {
+        flex-direction: column;
+        display: flex;
+        padding: 10px;;
+    }
+    .tituloplano::after {
+        content:"";
+        height: 3px;
+        width: 100%;
+        background-color: rgb(7, 7, 78);
+
+    }
+</style>
+<body class="centralizado">
+    <header>
+        <section>
+        <h1 class="cima">FlexTurismos</h1>
+        <ul  class="quemsomos">
+            <li><a class="quemsomos"class="quemsomos" href="#quem-somos">Quem Somos</a></li>
+            <li><a class="quemsomos"href="#servicos">Serviços</a></li>
+            <li><a class="quemsomos" href="#planos">Planos</a></li>
+        </ul>
+    </section>
+    </header>
+
+    <div >
+        <div class="flex ">
+            <h1 class="flex1">Flex <br>Turismos</h1>
+            <p class="item">O melhor serviço para você!</p>
+        <a class=" bolinha" >Saiba Mais!</a>
+        </div>
+        
+        <section>
+            <img class="imagem1" src="img/banner.jfif" alt="banner de apresentação"></div>
+        </section>
+    </div>
+
+    <div class="alinhamento2">
+        <section>
+            <img class="imagem2" src="img/vemcomagente.png" alt="balcão de atendimento">
+        </div>
+
+        <div class="texto2">
+            <h2 class="quemsomostexto">Quem somos</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+        </div>
+    </div>
+
+    <div class="fundoazul">
+        <div>
+            <h2 class="serviços">Serviços</h2>
+        </div>
+
+        <section class="imagens">
+            <div>
+                <div><img class="imagens" src="img/pacote de viagens.jpg" alt="pacote de viagens"></div>
+                <p class="abaixoimagem2">Pacotes de viagens</p>
+                <a class="bolinha2 abaixoimagem">Comprar Agora</a>
+             </div>
+
+            <div>
+                <div><img class="imagens" src="img/hospedagem.jfif" alt="hospedagens"></div>
+                <p class="abaixoimagem3">Hospedagens</p>
+                <a class="bolinha2 abaixoimagem">Comprar Agora</a>
+            </div>
+
+            <div>
+                <div><img class="imagens" src="img/roteiros.jpg" alt="roteiros personalizados"></div>
+                <p class="abaixoimagem4">Roteiros personalizados</p>
+                <a class="bolinha3 abaixoimagem">Comprar Agora</a>
+            </div>
+
+        </section>
+    </div>
+       <p class="Titulop">Planos</p>
+    <section class="planos">
+          
+        <div class="plano1" >
+            <p class="tituloplano" >Plano 1</p>
+            
+            <ul>
+                <li class="textosplanos" >Suporte 24h</li>
+                <li class="textosplanos" >Serviços de quarto</li>
+                <li class="textosplanos" >Guia turístico</li>
+            </ul>
+            <a class="bolinhaplano">Saiba Mais!</a>
+        </div>
+
+        <div  class="plano2">
+            <p class="tituloplano">Plano 2</p>
+            
+            <ul>
+                <li  class="textosplanos">Suporte 24h</li>
+                <li  class="textosplanos">Serviços de quarto</li>
+                <li  class="textosplanos">Guia turístico</li>
+                <li  class="textosplanos">Roteiro de trilhas</li>
+                <li  class="textosplanos">Serviço personalizado</li>
+            </ul>
+            <a class="bolinhaplano2">Saiba Mais!</a>
+        </div>
+
+        <div  class="plano3">
+            <p class="tituloplano">Plano 3</p>
+            
+            <ul>
+                <li>Suporte 24h</li>
+                <li>Serviços de quarto</li>
+                <li>Guia turístico</li>
+                <li>Roteiro de trilhas</li>
+                <li>Serviço personalizado</li>
+                <li>Área Vip</li>
+            </ul>
+            <a class="bolinhaplano3">Saiba Mais!</a>
+        </div>
+    </section>
+    <footer class="rodape">
+        <p class="titulorodape"> Informações do Desenvolvedor</p>
+    <p class="meunome">Desenvolvido por: Matheus Francisco Penna Carlos</p>
+      <ul class="informacoes branco">
+    </ul>
+    <p class="rodape1">&copy; 2021 CSS Flexbox
+    </footer>
+</body>
+</html>
